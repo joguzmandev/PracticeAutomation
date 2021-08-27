@@ -25,7 +25,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page Home/linkShop
 WebUI.click(findTestObject('Object Repository/Page Home/linkShopMenu'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page Shop/linkHomeMenu'), GlobalVariable.timeout)
-WebUI.click(findTestObject('Ocd bject Repository/Page Shop/linkHomeMenu'))
+WebUI.click(findTestObject('Object Repository/Page Shop/linkHomeMenu'))
 
 int resultSlidesFound = CustomKeywords.'SlideCounter.counterImgInsideSlider'(findTestObject('Object Repository/Page Home/imgSlide'))
 
