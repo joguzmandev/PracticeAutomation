@@ -1,0 +1,29 @@
+{
+  "keywordFileContentHash": "541F0618C0C076165A081D34F8C8DF3A",
+  "keywordClasses": [
+    {
+      "name": "SlideCounter",
+      "keywordMethods": [
+        {
+          "name": "counterImgInsideSlider",
+          "parameters": [
+            {
+              "name": "by",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
