@@ -1,0 +1,47 @@
+{
+  "keywordFileContentHash": "8D0C31010F061C44C3247E1D19351890",
+  "keywordClasses": [
+    {
+      "name": "CounterElementsHelper",
+      "keywordMethods": [
+        {
+          "name": "counterWebElements",
+          "parameters": [
+            {
+              "name": "by",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "xxxx",
+          "parameters": [
+            {
+              "name": "by",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

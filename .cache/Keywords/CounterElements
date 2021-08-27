@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "A2A1B9E32AD7DBB11C556901E05A6A81",
+  "keywordClasses": [
+    {
+      "name": "CounterElements",
+      "keywordMethods": [
+        {
+          "name": "counterWebElements",
+          "parameters": [
+            {
+              "name": "by",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

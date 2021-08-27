@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>divArrivalsContainer</name>
+   <tag></tag>
+   <elementGuidId>cb06ff1a-a97a-413e-8253-1ef61035abfc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='themify_builder_content-22']/div[2]/div/div/div/div/div[2]//div[starts-with(@class,&quot;col3-1&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

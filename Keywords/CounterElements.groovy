@@ -23,13 +23,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class SlideCounter {
+public class CounterElements {
 
 	@Keyword
-	def static counterImgInsideSlider(TestObject by) {
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Page Home/linkShopMenu'), GlobalVariable.timeout)
-
-		List<WebElement> imgs = WebUiCommonHelper.findElementsByDefault(by, GlobalVariable.timeout)
-		return imgs.size()
+	def static counterWebElements(TestObject by) {
+		WebUI.waitForElementPresent(by, GlobalVariable.timeout)
+		List<WebElement> webElementsFoundsList = WebUiCommonHelper.findElementsByDefault(by, GlobalVariable.timeout)
+		return webElementsFoundsList.size()
 	}
 }

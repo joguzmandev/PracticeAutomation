@@ -15,9 +15,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys
-import org.testng.Assert
-import org.testng.Assert as Keys
+import org.openqa.selenium.Keys as Keys
+import org.testng.Assert as Assertions
 
 CustomKeywords.'Login.loginApplication'(GlobalVariable.username, GlobalVariable.password, GlobalVariable.urlApplication)
 
@@ -27,11 +26,9 @@ WebUI.click(findTestObject('Object Repository/Page Home/linkShopMenu'))
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page Shop/linkHomeMenu'), GlobalVariable.timeout)
 WebUI.click(findTestObject('Object Repository/Page Shop/linkHomeMenu'))
 
-int resultSlidesFound = CustomKeywords.'SlideCounter.counterImgInsideSlider'(findTestObject('Object Repository/Page Home/imgSlide'))
+int resultArrivalsFound = CustomKeywords.'CounterElements.counterWebElements'(findTestObject('Object Repository/Page Home/divArrivalsContainer'))
 
-WebUI.closeBrowser()
-
-Assert.assertEquals(resultSlidesFound, GlobalVariable.threeSlidersExpected,"Slides found not are 3")
+Assertions.assertEquals(resultArrivalsFound, GlobalVariable.threeArrivalsExpected,"Arrivals found not are ${GlobalVariable.threeArrivalsExpected}")
 
 
 
