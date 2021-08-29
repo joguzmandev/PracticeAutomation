@@ -16,18 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.testng.Assert 
 
-WebUI.callTestCase(findTestCase('2-test home page with three arrivals only'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('3-home page images in arrivals should navigate'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page Home/linkFirstArrival'), GlobalVariable.timeout)
-WebUI.click(findTestObject('Object Repository/Page Home/linkFirstArrival'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page Product/linkProductDescription'), GlobalVariable.timeout)
+WebUI.click(findTestObject('Object Repository/Page Product/linkProductDescription'))
 
-WebUI.waitForPageLoad(GlobalVariable.timeout)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page Product/liProductDescription'), GlobalVariable.timeout)
+String classes = WebUI.getAttribute(findTestObject('Object Repository/Page Product/liProductDescription'), "class")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page Product/btnAddToBasket'), GlobalVariable.timeout)
-WebUI.click(findTestObject('Object Repository/Page Product/btnAddToBasket'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page Product/linkImageZoom'), GlobalVariable.timeout)
-WebUI.verifyElementClickable(findTestObject('Object Repository/Page Product/linkImageZoom'))
+if(classes.toString().contains("active")) {
+	String message =WebUI.getText(findTestObject("Object Repository/Page Product/h2TitleProductDescription"))
+	Assert.assertEquals("Product Description", message,"Product does not click in product description tag")
+}else {
+	throw new Exception("No class found!")
+}
 
 

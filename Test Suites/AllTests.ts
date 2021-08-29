@@ -23,4 +23,22 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/1-test home page with three sliders only</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>577f1b0d-4376-4095-a613-3c73e646b73f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/3-home page images in arrivals should navigate</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>482f43e0-540e-4301-a349-038d9bcdca81</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/4-home page arrivals images description</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b8d1490c-70f4-4368-91f0-f63e15ab67c2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/5-home page arrivals images reviews</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

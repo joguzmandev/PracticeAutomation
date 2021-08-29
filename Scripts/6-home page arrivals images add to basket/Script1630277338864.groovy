@@ -27,7 +27,12 @@ WebUI.waitForPageLoad(GlobalVariable.timeout)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page Product/btnAddToBasket'), GlobalVariable.timeout)
 WebUI.click(findTestObject('Object Repository/Page Product/btnAddToBasket'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page Product/linkImageZoom'), GlobalVariable.timeout)
-WebUI.verifyElementClickable(findTestObject('Object Repository/Page Product/linkImageZoom'))
+WebUI.waitForPageLoad(GlobalVariable.timeout)
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page Product/span_cart_item_added'), GlobalVariable.timeout)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page Product/span_cart_amount'), GlobalVariable.timeout)
 
+String actualResult1 = WebUI.getText(findTestObject('Page Product/span_cart_amount'))
+String actualResult2 = WebUI.getText(findTestObject('Page Product/span_cart_item_added'))
+
+println "Result expected $actualResult1 and $actualResult2"
